@@ -10,7 +10,13 @@ public class LineDraw : MonoBehaviour
 
     public LineRenderer lineRenderer;
     public EdgeCollider2D edgeCollider;
+    public Rigidbody2D linerigidbody2D;
     public List<Vector2> fingerPositions;
+
+
+   
+
+    public GameObject wholeLine;
 
     void Start()
     {
@@ -32,6 +38,14 @@ public class LineDraw : MonoBehaviour
                 UpdateLine(tempFingerPos);
             }
         }
+  
+
+
+        //for (var i = 0; i < lineRenderer.positionCount; i++)
+        // {
+        //     lineRenderer.SetPosition(i, linerigidbody2D.position + edgeCollider.points[i]);
+        // }
+
     }
 
     void CreateLine()
@@ -39,11 +53,15 @@ public class LineDraw : MonoBehaviour
         currentLine = Instantiate(linePrefab, Vector3.zero, Quaternion.identity);
         lineRenderer = currentLine.GetComponent<LineRenderer>();
         edgeCollider = currentLine.GetComponent<EdgeCollider2D>();
+        linerigidbody2D = currentLine.GetComponent<Rigidbody2D>();
         fingerPositions.Clear();
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         fingerPositions.Add(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         lineRenderer.SetPosition(0, fingerPositions[0]);
         lineRenderer.SetPosition(1, fingerPositions[1]);
+
+
+
         edgeCollider.points = fingerPositions.ToArray(); 
     }
 
@@ -53,10 +71,29 @@ public class LineDraw : MonoBehaviour
         lineRenderer.positionCount++;
         lineRenderer.SetPosition(lineRenderer.positionCount - 1, newFingerPos);
         edgeCollider.points = fingerPositions.ToArray();
+
+        linerigidbody2D.centerOfMass = calculateCOM(edgeCollider);
+
+
+
     }
 
     void applyGravity(List<Vector2> fingerPositions)
     {
 
+    }
+
+    Vector2 calculateCOM(EdgeCollider2D edgeCollider)
+    {
+        var com = Vector2.zero;
+
+        for (var i = 0; i < edgeCollider.pointCount; i++)
+        {
+            com += edgeCollider.points[i];
+        };
+
+        com /= edgeCollider.pointCount;
+
+        return com;
     }
 }
