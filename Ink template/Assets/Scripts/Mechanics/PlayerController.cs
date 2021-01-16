@@ -14,9 +14,13 @@ namespace Platformer.Mechanics
     /// </summary>
     public class PlayerController : KinematicObject
     {
+        public InkBar InkBarObject;
+        InkBar inkBar;
+
         public AudioClip jumpAudio;
         public AudioClip respawnAudio;
         public AudioClip ouchAudio;
+        
 
         /// <summary>
         /// Max horizontal speed of the player.
@@ -49,6 +53,14 @@ namespace Platformer.Mechanics
             collider2d = GetComponent<Collider2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
             animator = GetComponent<Animator>();
+        }
+
+        protected override void Start()
+        {
+            inkCartridge.value = initInkCapacity;
+            inkBar = Instantiate(InkBarObject);
+            inkBar.playerController = this;
+            base.Start();
         }
 
         protected override void Update()

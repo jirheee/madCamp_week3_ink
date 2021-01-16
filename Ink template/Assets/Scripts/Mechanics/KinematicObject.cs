@@ -12,7 +12,7 @@ namespace Platformer.Mechanics
         /// <summary>
         /// The minimum normal (dot product) considered suitable for the entity sit on.
         /// </summary>
-        public float minGroundNormalY = .65f;
+        public float minGroundNormalY = 0.63f;
 
         /// <summary>
         /// A custom gravity coefficient applied to this entity.
@@ -38,6 +38,10 @@ namespace Platformer.Mechanics
 
         protected const float minMoveDistance = 0.001f;
         protected const float shellRadius = 0.01f;
+
+        public InkCartridge inkCartridge;
+        public float maxInkCapacity;
+        public float initInkCapacity;
 
 
         /// <summary>
@@ -73,7 +77,7 @@ namespace Platformer.Mechanics
         protected virtual void OnEnable()
         {
             body = GetComponent<Rigidbody2D>();
-            body.isKinematic = true;
+            body.isKinematic = false;
         }
 
         protected virtual void OnDisable()
@@ -138,7 +142,7 @@ namespace Platformer.Mechanics
                     var currentNormal = hitBuffer[i].normal;
 
                     //is this surface flat enough to land on?
-                    if (currentNormal.y > minGroundNormalY)
+                    if (true) // currentNormal.y > minGroundNormalY
                     {
                         IsGrounded = true;
                         // if moving up, change the groundNormal to new surface normal.
