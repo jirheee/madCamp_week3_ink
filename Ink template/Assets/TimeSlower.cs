@@ -29,7 +29,7 @@ public class TimeSlower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp("z"))
+        if (Input.GetKeyUp(KeyCode.LeftShift))
         {
 
             

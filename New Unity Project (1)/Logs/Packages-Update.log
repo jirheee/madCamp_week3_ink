@@ -43,3 +43,14 @@ The following packages were added:
   com.unity.textmeshpro@2.1.1
   com.unity.timeline@1.2.17
   com.unity.ugui@1.0.0
+
+=== Sat Jan 16 22:44:17 2021
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.cinemachine@2.5.0
+  com.unity.connect.share@1.2.0-preview.1
+  com.unity.learn.iet-framework@0.3.0-preview.5
+  com.unity.postprocessing@2.3.0

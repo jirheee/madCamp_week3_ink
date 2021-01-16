@@ -17,7 +17,7 @@ namespace Platformer.Mechanics
         /// <summary>
         /// A custom gravity coefficient applied to this entity.
         /// </summary>
-        public float gravityModifier = 1f;
+        public float gravityModifier = 0.8f;
 
         /// <summary>
         /// The current velocity of the entity.
@@ -142,7 +142,7 @@ namespace Platformer.Mechanics
                     var currentNormal = hitBuffer[i].normal;
 
                     //is this surface flat enough to land on?
-                    if (true) // currentNormal.y > minGroundNormalY
+                    if (currentNormal.y > minGroundNormalY) // currentNormal.y > minGroundNormalY
                     {
                         IsGrounded = true;
                         // if moving up, change the groundNormal to new surface normal.
