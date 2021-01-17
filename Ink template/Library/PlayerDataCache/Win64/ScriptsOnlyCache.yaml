@@ -4,8 +4,7 @@ ScriptsOnlyBuild:
     - InkBar
     - InkCartridge
     - IntroToMain
-    - MainToExit
-    - MainToStage1
+    - Main
     - Platformer.Mechanics.DeathZone
     - Platformer.Mechanics.GameController
     - Platformer.Mechanics.Health
@@ -25,6 +24,7 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -50,7 +50,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Intro.unity:
     - Class: 1
@@ -78,15 +77,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12914}
+      Script: {instanceID: 12916}
     - Class: 114
-      Script: {instanceID: 14212}
+      Script: {instanceID: 14216}
     - Class: 114
-      Script: {instanceID: 14232}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 15078}
+      Script: {instanceID: 15082}
     - Class: 114
-      Script: {instanceID: 15230}
+      Script: {instanceID: 15234}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -121,26 +120,22 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11980}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12850}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13752}
+      Script: {instanceID: 13756}
     - Class: 114
-      Script: {instanceID: 13932}
+      Script: {instanceID: 13936}
     - Class: 114
-      Script: {instanceID: 14750}
+      Script: {instanceID: 14754}
     - Class: 114
-      Script: {instanceID: 15492}
-    - Class: 114
-      Script: {instanceID: 20184}
+      Script: {instanceID: 15496}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -196,57 +191,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 672}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 11724}
+      Script: {instanceID: 11726}
     - Class: 114
-      Script: {instanceID: 12046}
+      Script: {instanceID: 12048}
     - Class: 114
-      Script: {instanceID: 12136}
+      Script: {instanceID: 12138}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 12850}
     - Class: 114
-      Script: {instanceID: 12940}
+      Script: {instanceID: 12942}
     - Class: 114
-      Script: {instanceID: 13464}
+      Script: {instanceID: 13468}
     - Class: 114
-      Script: {instanceID: 13538}
+      Script: {instanceID: 13542}
     - Class: 114
-      Script: {instanceID: 13566}
+      Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 13738}
+      Script: {instanceID: 13742}
     - Class: 114
-      Script: {instanceID: 13752}
+      Script: {instanceID: 13756}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 13836}
     - Class: 114
-      Script: {instanceID: 13842}
+      Script: {instanceID: 13846}
     - Class: 114
-      Script: {instanceID: 13872}
-    - Class: 114
-      Script: {instanceID: 14208}
+      Script: {instanceID: 13876}
     - Class: 114
       Script: {instanceID: 14212}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14216}
     - Class: 114
-      Script: {instanceID: 14326}
+      Script: {instanceID: 14238}
     - Class: 114
-      Script: {instanceID: 14432}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14580}
+      Script: {instanceID: 14436}
     - Class: 114
-      Script: {instanceID: 14626}
+      Script: {instanceID: 14584}
     - Class: 114
-      Script: {instanceID: 14750}
+      Script: {instanceID: 14630}
     - Class: 114
-      Script: {instanceID: 15326}
+      Script: {instanceID: 14754}
     - Class: 114
-      Script: {instanceID: 15332}
+      Script: {instanceID: 15330}
     - Class: 114
-      Script: {instanceID: 15436}
+      Script: {instanceID: 15336}
     - Class: 114
-      Script: {instanceID: 15492}
+      Script: {instanceID: 15440}
+    - Class: 114
+      Script: {instanceID: 15496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -705,6 +700,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: Main
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: TemplateEditorDetection
   - hash:
       serializedVersion: 2
@@ -868,12 +869,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Platformer.Mechanics
     className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainToStage1
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -1306,12 +1301,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainToExit
   platform: 19
   scenePathNames:
   - Assets/Scenes/Intro.unity
