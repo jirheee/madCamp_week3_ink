@@ -2077,12 +2077,12 @@ PrefabInstance:
     - target: {fileID: 2427950616468086072, guid: 06a6b93cb2100aa43bf9c82923a4c1b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7385468
+      value: -0.07204294
       objectReference: {fileID: 0}
     - target: {fileID: 2427950616468086072, guid: 06a6b93cb2100aa43bf9c82923a4c1b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6679482
+      value: 1.3527379
       objectReference: {fileID: 0}
     - target: {fileID: 2427950616468086072, guid: 06a6b93cb2100aa43bf9c82923a4c1b9,
         type: 3}
@@ -2610,13 +2610,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
+      propertyPath: maxSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+        type: 3}
       propertyPath: gravityModifier
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
+      propertyPath: initInkCapacity
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
+        type: 3}
       propertyPath: jumpTakeOffSpeed
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114230831923080080, guid: 7d60c822c3f1b408ea7a00ecdb5e047a,
         type: 3}
@@ -2710,6 +2720,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 283784947}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1956519415 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2427950616468086215, guid: 06a6b93cb2100aa43bf9c82923a4c1b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1509354845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!60 &1958727841 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 5102505034379151492, guid: 6f545478bd0fb7a478ed6f674a5210f5,
@@ -2760,3 +2776,22 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &2132929281 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8039950277454507671, guid: b3f9abbe012f5e64bb86733dc9e1e82a,
+    type: 3}
+  m_PrefabInstance: {fileID: 469569087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2132929284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132929281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc1fbcf600699c641b8a1d8f5c7a1cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 1956519415}

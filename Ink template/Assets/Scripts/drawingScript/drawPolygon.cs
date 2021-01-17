@@ -40,7 +40,16 @@ public class drawPolygon : MonoBehaviour
                 if (Vector2.Distance(tempFingerPos, fingerPositions[fingerPositions.Count - 1]) > .1f)
                 {
                     UpdateLine(tempFingerPos);
-                    player.inkCartridge.value -= 0.1f;
+
+                    if (player.inkCartridge.value > 0)
+                    {
+                        player.inkCartridge.value -= 0.1f;
+                    }
+                    else
+                    {
+                        player.inkCartridge.value = 0;
+                    }
+                    
                 }
             }
         }
