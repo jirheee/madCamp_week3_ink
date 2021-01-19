@@ -18,13 +18,12 @@
 ![캡처](https://user-images.githubusercontent.com/65358599/105020260-6a47a900-5a8a-11eb-9dd1-d07c4900048b.PNG)
 
 #### 정인
-![KakaoTalk_20210117_170357455_11-removebg-preview](https://user-images.githubusercontent.com/65358599/105025187-5d2db880-5a90-11eb-9841-a5463d307751.png)
+![KakaoTalk_20210117_170357455_11-removebg-preview](https://user-images.githubusercontent.com/65358599/105025187-5d2db880-5a90-11eb-9841-a5463d307751.png=100x100)
 
 ## 3. 게임 방법 및 시스템
 
-### 게임 목표
-잉크맨을 도와 잉크맨을 노트 속으로부터 탈출시키자!  
-각각의 스테이지에서 잉크맨을 도와 스테이지를 클리어하고, 보스 스테이지에서 잉크맨의 탈출을 방해하는 민수를 물리쳐 잉크맨을 탈출시켜야 한다.
+### 게임 목표 
+각각의 스테이지에서 잉크맨을 도와 스테이지를 클리어하고, 보스 스테이지에서 잉크맨의 탈출을 방해하는 정인이를 물리쳐 잉크맨을 탈출시키자!
 
 ### 조작법
 ![gif_animation_001-min](https://user-images.githubusercontent.com/65358599/105023478-59009b80-5a8e-11eb-8de5-fe19e2fec7bc.gif)
