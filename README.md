@@ -9,6 +9,7 @@
 ### 캐릭터 설정
 
 #### 잉크맨
+![캡처](https://user-images.githubusercontent.com/65358599/105020260-6a47a900-5a8a-11eb-9dd1-d07c4900048b.PNG)
 
 #### 민수
 
