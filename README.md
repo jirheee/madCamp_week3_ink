@@ -18,7 +18,7 @@
 ![캡처](https://user-images.githubusercontent.com/65358599/105020260-6a47a900-5a8a-11eb-9dd1-d07c4900048b.PNG)
 
 #### 정인
-![KakaoTalk_20210117_170357455_11-removebg-preview](https://user-images.githubusercontent.com/65358599/105025187-5d2db880-5a90-11eb-9841-a5463d307751.png=100x100)
+![KakaoTalk_20210117_170357455_11-removebg-preview](https://user-images.githubusercontent.com/65358599/105025187-5d2db880-5a90-11eb-9841-a5463d307751.png| width=100)
 
 ## 3. 게임 방법 및 시스템
 
