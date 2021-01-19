@@ -927,8 +927,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Thanks to \uD568\uCC3D\uC218 \"The King God Emperor\"\n\uBAB0\uC785\uCEA0\uD504
-    3\uBD84\uBC18 \uCD5C\uACE0\uB2E4"
+  m_text: 'Thanks to
+
+    Mad Camp
+
+    Prof. Ryu
+
+    Mr.Jang
+
+    Changsu Ham'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

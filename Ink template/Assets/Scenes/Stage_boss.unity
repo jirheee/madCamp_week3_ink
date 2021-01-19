@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 5
   rockspeed: 3
+  speed: 4
   rockPrefab: {fileID: 2761148528093686787, guid: bbd8858e251a76347958bd7d35348874,
     type: 3}
   currentRock: {fileID: 0}
