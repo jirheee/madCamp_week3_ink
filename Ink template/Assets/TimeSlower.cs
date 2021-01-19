@@ -48,7 +48,11 @@ public class TimeSlower : MonoBehaviour
             {
                 for (var i = 0; i < allRenderer.Length; i++)
                 {
-                    allRenderer[i].material.SetColor("_Color", colorList[i]);
+                    if (allRenderer[i] != null)
+                    {
+                        allRenderer[i].material.SetColor("_Color", colorList[i]);
+                    }
+                    
                 }
                 colorList.Clear();
             }

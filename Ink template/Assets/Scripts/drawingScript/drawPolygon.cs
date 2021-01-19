@@ -84,11 +84,16 @@ public class drawPolygon : MonoBehaviour
     void UpdateLine(Vector2 newFingerPos)
     {
         fingerPositions.Add(newFingerPos);
-        lineRenderer.positionCount++;
-        lineRenderer.SetPosition(lineRenderer.positionCount - 1, newFingerPos);
-        polyGonCollider.points = fingerPositions.ToArray();
 
-        polygonrigidbody2D.centerOfMass = calculateCOM(polyGonCollider);
+        if (lineRenderer != null)
+        {
+            lineRenderer.positionCount++;
+            lineRenderer.SetPosition(lineRenderer.positionCount - 1, newFingerPos);
+            polyGonCollider.points = fingerPositions.ToArray();
+
+            polygonrigidbody2D.centerOfMass = calculateCOM(polyGonCollider);
+        }
+        
 
 
 
