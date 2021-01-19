@@ -5,6 +5,7 @@ using Platformer.Gameplay;
 using static Platformer.Core.Simulation;
 using Platformer.Model;
 using Platformer.Core;
+using System;
 
 namespace Platformer.Mechanics
 {
@@ -34,7 +35,10 @@ namespace Platformer.Mechanics
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
         /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
+
+        
+        /*internal new*/
+        public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
 

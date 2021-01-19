@@ -21,6 +21,7 @@ ScriptsOnlyBuild:
     - Platformer.UI.MainUIController
     - Platformer.UI.MetaGameController
     - PlayAudioClip
+    - StageToMain
     - Stone
     - TimeSlower
     - damaged
@@ -37,6 +38,7 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -53,8 +55,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -235,6 +239,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12700}
     - Class: 114
+      Script: {instanceID: 13100}
+    - Class: 114
       Script: {instanceID: 13230}
     - Class: 114
       Script: {instanceID: 13306}
@@ -278,6 +284,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15214}
     - Class: 114
       Script: {instanceID: 15270}
+    - Class: 114
+      Script: {instanceID: 52302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -386,6 +394,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14204}
     - Class: 114
+      Script: {instanceID: 14290}
+    - Class: 114
       Script: {instanceID: 14354}
     - Class: 114
       Script: {instanceID: 14400}
@@ -401,6 +411,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15126}
     - Class: 114
       Script: {instanceID: 15214}
+    - Class: 114
+      Script: {instanceID: 52302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -485,6 +497,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12700}
     - Class: 114
+      Script: {instanceID: 13100}
+    - Class: 114
       Script: {instanceID: 13230}
     - Class: 114
       Script: {instanceID: 13306}
@@ -526,6 +540,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15214}
     - Class: 114
       Script: {instanceID: 15270}
+    - Class: 114
+      Script: {instanceID: 52302}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1663,6 +1679,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StageToMain
   platform: 19
   scenePathNames:
   - Assets/Scenes/Intro.unity

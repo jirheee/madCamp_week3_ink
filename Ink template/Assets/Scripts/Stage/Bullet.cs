@@ -8,7 +8,7 @@ using Platformer.Core;
 public class Bullet : MonoBehaviour
 {
     Transform playerTransform;
-    float deltaX = 0f;
+    float deltaX = -3f;
     float xPosition;
     float yPosition;
     GameObject bullet;
@@ -24,10 +24,10 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (deltaX > -17.5f)
+        if (transform.position.x > 22.5f) 
         {
-            deltaX -= 0.01f;
-            transform.position = new Vector3(xPosition + deltaX, yPosition, 0);
+            xPosition += deltaX * Time.deltaTime;
+            transform.position = new Vector3(xPosition, yPosition, 0);
         }
         else
         {
@@ -37,11 +37,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.gameObject.CompareTag("line"))
-        //{
-        //    Destroy(collision.gameObject);
-        //}
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("line"))
+        {
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("Player"))
         {
             var player = model.player;
             if (player.health.IsAlive)

@@ -30,6 +30,15 @@ namespace Platformer.Mechanics
             if (Instance == this) Instance = null;
         }
 
+        private void Start()
+        {
+            Debug.Log("initialized");
+            
+            model.player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+            model.virtualCamera = GameObject.FindGameObjectWithTag("cmVcam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
+            model.spawnPoint = GameObject.FindGameObjectWithTag("spawnPoint").GetComponent<Transform>();
+        }
+
         void Update()
         {
             if (Instance == this) Simulation.Tick();

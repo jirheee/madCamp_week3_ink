@@ -28,6 +28,7 @@ namespace Platformer.UI
         }
         public void ToMain()
         {
+            Debug.Log("23");
             SceneManager.LoadScene("MainScene");
         }
     }

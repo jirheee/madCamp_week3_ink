@@ -8,6 +8,11 @@ TagManager:
   - rock
   - tile
   - boss
+  - Wall
+  - Stage1
+  - Boss
+  - cmVcam
+  - spawnPoint
   layers:
   - Default
   - TransparentFX
