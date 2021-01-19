@@ -22,8 +22,17 @@ public class Main : MonoBehaviour
         Application.Quit();
     }
 
+    public void toTutorial()
+    {
+        SceneManager.LoadScene("Stage_tutorial");
+    }
+
     public void toStage1()
     {
         SceneManager.LoadScene("Stage1");
+    }
+    public void toBoss()
+    {
+        SceneManager.LoadScene("Stage_boss");
     }
 }

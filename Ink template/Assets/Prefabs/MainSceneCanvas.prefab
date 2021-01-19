@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 4802946588773866632}
   - component: {fileID: 4802946588773866631}
   - component: {fileID: 4802946588773866630}
+  - component: {fileID: 1940316931411490934}
   m_Layer: 5
   m_Name: Stage4Button
   m_TagString: Untagged
@@ -259,7 +260,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4802946588773866631}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1940316931411490934}
+        m_MethodName: toBoss
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1940316931411490934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4802946588773866628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328e95361511cdc48b50ec7b70d43bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4802946588825462091
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +296,7 @@ GameObject:
   - component: {fileID: 4802946588825462096}
   - component: {fileID: 4802946588825462095}
   - component: {fileID: 4802946588825462094}
+  - component: {fileID: 7386104120568534313}
   m_Layer: 5
   m_Name: Stage1Button
   m_TagString: Untagged
@@ -378,8 +403,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: toStage1
+      - m_Target: {fileID: 7386104120568534313}
+        m_MethodName: toTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -389,6 +414,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7386104120568534313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4802946588825462091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328e95361511cdc48b50ec7b70d43bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4802946589013910734
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +438,7 @@ GameObject:
   - component: {fileID: 4802946589013910738}
   - component: {fileID: 4802946589013910737}
   - component: {fileID: 4802946589013910736}
+  - component: {fileID: 4808074956860286787}
   m_Layer: 5
   m_Name: Stage2Button
   m_TagString: Untagged
@@ -506,7 +544,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4802946589013910737}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4808074956860286787}
+        m_MethodName: toStage1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4808074956860286787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4802946589013910734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328e95361511cdc48b50ec7b70d43bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4802946589051447558
 GameObject:
   m_ObjectHideFlags: 0
